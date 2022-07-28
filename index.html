@@ -60,19 +60,20 @@
 
             <!-- VSL -->
             <div id="vid_62e0ba26768a20000b475f60" style="position:relative;width:100%;padding: 56.25% 0 0;"><img id="thumb_62e0ba26768a20000b475f60" src="https://images.converteai.net/4c0019b6-7ad9-44bf-b1d9-1ba6db9a8637/players/62e0ba26768a20000b475f60/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"><div id="backdrop_62e0ba26768a20000b475f60" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div></div><script type="text/javascript" id="scr_62e0ba26768a20000b475f60">var s=document.createElement("script");s.src="https://scripts.converteai.net/4c0019b6-7ad9-44bf-b1d9-1ba6db9a8637/players/62e0ba26768a20000b475f60/player.js",s.async=!0,document.head.appendChild(s);</script>
-              <br>
-             <div id="viewers">
+              
+            <br>
+            <div id="viewers">
   <span></span>  <canvas style="margin-left:1em;margin-right:1em;background-color: #00ff00;width:10px;height:10px;border-radius:100%"></canvas>pessoas estão assistindo a esse vídeo agora! 
 </div>
 <script>
-  document.querySelectorAll("#viewers span")[0].innerHTML = getUsersView();
+  document.querySelectorAll("#viewers span")[100].innerHTML = getUsersView();
 
   setInterval(() => {
     updatesUsersView();
   }, 2500);
 
   function getUsersView() {
-    return Math.floor(Math.random() * (Math.floor(910) - Math.ceil(690))) + Math.ceil(690);
+    return Math.floor(Math.random(440) * (Math.floor(910) - Math.ceil(690))) + Math.ceil(690);
   }
 
   function updatesUsersView() {
